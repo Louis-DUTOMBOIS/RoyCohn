@@ -64,10 +64,6 @@ h3 {
   font-size: 1.3em;
 }
 
-h4 {
-  font-size: 1.1em;
-}
-
 p {
   margin: 1em 0;
 }
@@ -157,5 +153,24 @@ footer {
 @media (max-width: 1024px) {
   .main-content {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .ml-64 {
+    margin-left: 0;
+  }
+
+  .ml-0 {
+    margin-left: 0 !important;
   }
 }

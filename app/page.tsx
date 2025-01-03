@@ -1,10 +1,43 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 
 const RoyCohnPage = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
     return (
         <div className="flex bg-gray-100 min-h-screen">
+            {/* Burger Menu Button */}
+            <button
+                className="lg:hidden p-4 fixed top-0 left-0 z-20"
+                onClick={toggleSidebar}
+            >
+                <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                </svg>
+            </button>
+
             {/* Sidebar */}
-            <nav className="w-64 bg-white border-r border-gray-300 p-4 fixed h-full">
+            <nav
+                className={`w-64 bg-white border-r border-gray-300 p-4 fixed h-full z-10 transform ${
+                    isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                } lg:translate-x-0 transition-transform duration-300 ease-in-out`}
+            >
                 <h2 className="text-xl font-bold mb-4">Contents</h2>
                 <ul className="list-disc list-inside text-sm">
                     <li><a href="#section1" className="text-blue-600 hover:underline">Extraits de textes clés</a></li>
@@ -18,7 +51,7 @@ const RoyCohnPage = () => {
             </nav>
 
             {/* Main content */}
-            <main className="ml-64 flex-1 p-6">
+            <main className={`p-6 transition-all duration-300 ease-in-out ${isSidebarOpen ? 'ml-64' : 'ml-0'} lg:ml-64`}>
                 <header className="border-b border-gray-300 pb-4 mb-6">
                     <h1 className="text-4xl font-bold text-gray-800">Roy Marcus Cohn</h1>
                 </header>
