@@ -254,23 +254,24 @@ const RoyCohnPage = () => {
                     </p>
                     <div
                         id="imageRoy"
-                        className="border border-gray-300 p-5 bg-white items-center lg:order-2 flex flex-wrap justify-center space-x-4">
+                        className="border border-gray-300 p-5 bg-white items-center lg:order-2 flex justify-center space-x-4">
                         <img
                             src="text1.jpeg"
                             alt="Roy Cohn"
-                            className="object-cover mb-4 border border-gray-300 max-w-full h-auto"
+                            className="object-cover mb-4 border border-gray-300 w-1/3 max-w-full h-auto"
                         />
                         <img
                             src="text3.jpeg"
                             alt="Roy Cohn"
-                            className="object-cover mb-4 border border-gray-300 max-w-full h-auto"
+                            className="object-cover mb-4 border border-gray-300 w-1/3 max-w-full h-auto"
                         />
                         <img
                             src="text2.jpeg"
                             alt="Roy Cohn"
-                            className="object-cover mb-4 border border-gray-300 max-w-full h-auto"
+                            className="object-cover mb-4 border border-gray-300 w-1/3 max-w-full h-auto"
                         />
                     </div>
+
 
                 </section>
 
