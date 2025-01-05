@@ -42,10 +42,13 @@ const RoyCohnPage = () => {
                 <ul className="list-disc list-inside text-sm">
                     <li><a href="#section1" className="text-blue-600 hover:underline">Extraits de textes clés</a></li>
                     <li><a href="#section2" className="text-blue-600 hover:underline">Recherches personnelles</a></li>
-                    <li><a href="#section3" className="text-blue-600 hover:underline">Photographies et inspirations visuelles</a></li>
+                    <li><a href="#section3" className="text-blue-600 hover:underline">Photographies et inspirations
+                        visuelles</a></li>
                     <li><a href="#section5" className="text-blue-600 hover:underline">Répliques essentielles</a></li>
-                    <li><a href="#section6" className="text-blue-600 hover:underline">Partition personnelle annotée</a></li>
-                    <li><a href="#section7" className="text-blue-600 hover:underline">Citation centrale dans la loge</a></li>
+                    <li><a href="#section6" className="text-blue-600 hover:underline">Partition personnelle annotée</a>
+                    </li>
+                    <li><a href="#section7" className="text-blue-600 hover:underline">Citation centrale dans la loge</a>
+                    </li>
                     <li><a href="#conclusion" className="text-blue-600 hover:underline">Conclusion</a></li>
                 </ul>
             </nav>
@@ -335,8 +338,11 @@ const RoyCohnPage = () => {
                     </p>
                 </section>
 
-
+                <footer className="mt-8 p-4 bg-gray-100 text-center border-t border-gray-300">
+                    Travail réalisé par <strong>Candice DELANNOY</strong>
+                </footer>
             </main>
+
         </div>
     );
 };
